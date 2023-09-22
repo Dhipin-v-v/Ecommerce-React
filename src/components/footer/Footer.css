@@ -1,0 +1,155 @@
+.footer-container {
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block: 1.5rem;
+}
+.footer-content {
+  width: 80%;
+  color: #ffffff;
+}
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.left-div h1 {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.subscribe-div {
+  display: flex;
+  gap: 1.5rem;
+}
+.subscribe-div input {
+  border: 1px solid #ffffff;
+  outline: none;
+  padding: 0.5rem;
+  background-color: #000000;
+  border-radius: 0.2rem;
+  width: 17rem;
+  color: #ffffff;
+}
+.subscribe-div button {
+  background-color: #0156ff;
+  color: #ffffff;
+  border-radius: 2.5rem;
+  border: none;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  cursor: pointer;
+}
+.list-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.list-div div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  font-size: 0.8rem;
+}
+.list-div div th {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+}
+.link {
+  color: #01a4ff;
+}
+.hr-line {
+  height: 1px;
+  width: 100%;
+  background-color: #969696;
+  margin-block: 1.5rem;
+}
+.footer-bottom {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  color: #969696;
+}
+.card-images {
+  display: flex;
+  gap: 1rem;
+}
+.card-images img {
+  width: 2rem;
+  object-fit: contain;
+}
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+.social-icons .icon {
+  font-size: 1.7rem;
+}
+.sm-card-images {
+  display: none;
+}
+
+@media only screen and (max-width: 965px) {
+  .top-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .left-div {
+    text-align: center;
+  }
+  .list-div {
+    display: none;
+  }
+  .accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .hr-line {
+    display: none;
+  }
+  .accordion {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ffffff;
+  }
+  .accordion-content td {
+    list-style-type: none;
+  }
+  .accordion-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .accordion-header span {
+    font-weight: 700;
+  }
+  .accordion-header-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  .list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .footer-bottom {
+    margin-top: 1.5rem;
+  }
+  .card-images {
+    display: none;
+  }
+  .sm-card-images {
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .subscribe-div input {
+    width: 100%;
+  }
+}
